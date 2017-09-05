@@ -18,9 +18,14 @@ $BaseLink	=	'http://sipp.pn-makassar.go.id/list_perkara/sort/';
 				$RowNumb	+=	1;
 				if ($RowNumb != 0) {
 				$Link 		=	$element->find('./td[8]/a', 0)->href;
-				echo $DetailPg	=	file_get_html($Link);
-					
+				$DetailPg	=	file_get_html($Link);
+				if($DetailPg)
+				{
+					echo $name = $DetailPg->find("//*[@id='tableinfo']/tbody/tr[2]/td[1]",0)->plaintext;
+				}
 				
+					
+					
 				
 					
 
