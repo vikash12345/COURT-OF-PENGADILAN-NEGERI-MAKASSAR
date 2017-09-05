@@ -22,7 +22,7 @@ $BaseLink	=	'http://sipp.pn-makassar.go.id/list_perkara/sort/';
 					echo $Para		=	$element->find('./td[5]', 0)->plaintext;
 					echo $Status		=	$element->find('./td[6]', 0)->plaintext;
 					echo $Lama 		=	$element->find('./td[7]', 0)->plaintext;
-					echo $Link 		=	$element->find('./td[8]/a', 0)->src;
+					echo $Link 		=	$element->find('./td[8]/a', 0)->href;
 					
 		scraperwiki::save_sqlite(array('NO'), array('NO' => $NO , 'NOMOR' => $NOMOR, 'Tanggal' => $Tanggal, 'Klasifikasi' => $Klasifikasi, 'Para' => $Para, 'Lama' => $Lama, 'Detail_Page' => $Link));
 
