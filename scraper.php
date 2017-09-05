@@ -21,7 +21,7 @@ $BaseLink	=	'http://sipp.pn-makassar.go.id/list_perkara/sort/';
 					
 				if($DetailPg)
 				{
-					echo $name = $DetailPg->find("//*[@id='tableinfo']/tbody/tr[2]/td[1]" ,0)->pliantext;
+					echo $name = $DetailPg->find("//*[@id='tableinfo']/tbody/tr[2]/td[1]")->pliantext;
 				}
 				
 					
