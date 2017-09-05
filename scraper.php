@@ -13,7 +13,7 @@ $BaseLink	=	'http://sipp.pn-makassar.go.id/list_perkara/sort/';
 		if ($Html) {
 			//	Paginate all 'View' buttons
 			foreach ($Html->find("//*[@id='tablePerkaraAll']/tbody") as $element) {
-			echo $CourtName	=	$element->find('./td[1]', 0);
+			echo $element;
 			}
   	}
 	}
