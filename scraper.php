@@ -24,11 +24,13 @@ $BaseLink	=	'http://sipp.pn-makassar.go.id/list_perkara/sort/';
 					echo $Lama 		=	$element->find('./td[7]', 0)->plaintext;
 					echo $Link 		=	$element->find('./td[8]/a', 0)->href;
 					
-					if($No != null){
-					scraperwiki::save_sqlite(array('NO'), array('PageLink' => $FinalURL ,'NO' => $No , 'NOMOR' => $Nomor, 'Tanggal' => $Tanggal, 'Klasifikasi' => $Klasifikasi, 'Para' => $Para, 'Status' => $Status , 'Lama' => $Lama, 'Detail_Page' => $Link));
-					}
+					
 
 			}
+				
+				if($No != null){
+					scraperwiki::save_sqlite(array('NO'), array('PageLink' => $FinalURL ,'NO' => $No , 'NOMOR' => $Nomor, 'Tanggal' => $Tanggal, 'Klasifikasi' => $Klasifikasi, 'Para' => $Para, 'Status' => $Status , 'Lama' => $Lama, 'Detail_Page' => $Link));
+					}
 
 			}
   	}
