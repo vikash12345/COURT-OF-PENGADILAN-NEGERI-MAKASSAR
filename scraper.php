@@ -15,22 +15,22 @@ $BaseLink	=	'http://sipp.pn-makassar.go.id/list_perkara/sort/';
 			foreach ($Html->find("//*[@id='tablePerkaraAll']/tbody/tr") as $element) {
 			$RowNumb	+=	1;
 				if ($RowNumb != 0) {
-					echo $No		=	$element->find('./td[1]', 0)->plaintext;
-					echo $Nomor		=	$element->find('./td[2]', 0)->plaintext;
-					echo $Tanggal		=	$element->find('./td[3]', 0)->plaintext;
-					echo $Klasifikasi	=	$element->find('./td[4]', 0)->plaintext;
-					echo $Para		=	$element->find('./td[5]', 0)->plaintext;
-					echo $Status		=	$element->find('./td[6]', 0)->plaintext;
-					echo $Lama 		=	$element->find('./td[7]', 0)->plaintext;
-					echo $Link 		=	$element->find('./td[8]/a', 0)->href;
-					
+					 $info['No']		=	$element->find('./td[1]', 0)->plaintext;
+					$info['Nomor']		=	$element->find('./td[2]', 0)->plaintext;
+					$info['Tanggal']	=	$element->find('./td[3]', 0)->plaintext;
+					$info['Klasifikasi']	=	$element->find('./td[4]', 0)->plaintext;
+					$info['Para']		=	$element->find('./td[5]', 0)->plaintext;
+					$info['Status']		=	$element->find('./td[6]', 0)->plaintext;
+					$info['Lama']		=	$element->find('./td[7]', 0)->plaintext;
+					$info['Link']		=	$element->find('./td[8]/a', 0)->href;
+scraperwiki::save_sqlite(array('NO'), array('PageLink' => $FinalURL ,'NO' => $info['No'] , 'NOMOR' => $info['Nomor'], 'Tanggal' => $info['Tanggal'], 'Klasifikasi' => $info['Klasifikasi'], 'Para' => $info['Para'], 'Status' => $info['Status'] , 'Lama' => $info['Lama'], 'Detail_Page' => $info['Link']));
+
 					
 
 			}
 				
-				if($No != null){
-					scraperwiki::save_sqlite(array('NO'), array('PageLink' => $FinalURL ,'NO' => $No , 'NOMOR' => $Nomor, 'Tanggal' => $Tanggal, 'Klasifikasi' => $Klasifikasi, 'Para' => $Para, 'Status' => $Status , 'Lama' => $Lama, 'Detail_Page' => $Link));
-					}
+				
+					
 
 			}
   	}
