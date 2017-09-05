@@ -9,6 +9,10 @@ $BaseLink	=	'http://sipp.pn-makassar.go.id/list_perkara/sort/';
 	{
 		$FinalURL	=	$BaseLink . $PageLoop;
    		$Html		=	file_get_html($FinalURL);
-		echo $Html;
+		if ($Html) {
+			//	Paginate all 'View' buttons
+			foreach ($Html->find("//*[@id='tablePerkaraAll']/tbody") as $element) {
+			echo $element;	
+			}
   	}
 ?>
