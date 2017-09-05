@@ -26,7 +26,7 @@ $BaseLink	=	'http://sipp.pn-makassar.go.id/list_perkara/sort/';
 					
 					
 					scraperwiki::save_sqlite(array('NO'), array('PageLink' => $FinalURL ,'NO' => $No , 'NOMOR' => $Nomor, 'Tanggal' => $Tanggal, 'Klasifikasi' => $Klasifikasi, 'Para' => $Para, 'Status' => $Status , 'Lama' => $Lama, 'Detail_Page' => $Link));
- => 
+
 
 			}
 
