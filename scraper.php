@@ -16,8 +16,7 @@ $BaseLink	=	'http://sipp.pn-makassar.go.id/list_perkara/sort/';
 			$RowNumb	+=	1;
 				if ($RowNumb != 0) {
 					
-						$No	=	$element->find('td[1]', 0);
-					echo $No;
+						echo $element;
 					
 				}
 			}
