@@ -15,4 +15,5 @@ $BaseLink	=	'http://sipp.pn-makassar.go.id/list_perkara/sort/';
 			echo $element;	
 			}
   	}
+	}
 ?>
