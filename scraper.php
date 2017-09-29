@@ -10,6 +10,7 @@ foreach($html->find("//*[@id='tablePerkaraAll']/tbody/tr") as $element)
 {
 	$No =	$element->find("td",0)->plaintext;
 	echo $No;
+	echo "not available";
 }
 }
 	//	Page pagination
