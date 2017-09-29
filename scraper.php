@@ -2,10 +2,14 @@
 
 require 		'scraperwiki.php';
 require 		'scraperwiki/simple_html_dom.php';
-for($page = 1; $page < 2 ; $page++)
+for($page = 1; $page < 3 ; $page++)
 {
 $BaseLink	=	'http://sipp.pn-makassar.go.id/list_perkara/page/'.$page;
-echo $html		=	file_get_html($BaseLink);	
+$html		=	file_get_html($BaseLink);
+foreach($html->find("//*[@id='tablePerkaraAll']/tbody") as $element)
+{
+	echo $element;
+}
 }
 	//	Page pagination
 	// $numberofpages.'<br>';
