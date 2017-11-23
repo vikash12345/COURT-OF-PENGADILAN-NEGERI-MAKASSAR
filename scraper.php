@@ -24,7 +24,9 @@ $RowNumb	=	-1;
 					$status			=	$element->find('td[6]', 0)->plaintext;
 					$lama			=	$element->find('td[7]', 0)->plaintext;
 					$details		=	$element->find('td[8]\a', 0)->href;
-					scraperwiki::save_sqlite(array('no'), array('no' => $no,
+					
+					echo "$no\n";
+					/*scraperwiki::save_sqlite(array('no'), array('no' => $no,
 									'nomor' => $nomor,
 									'tangal' => $tangal,
 									'klasifikasi' => $klasifikasi, 
@@ -32,7 +34,7 @@ $RowNumb	=	-1;
 									'status' => $status, 
 									'lama' => $lama, 
 									'details' => $details,
-									'baselink' => $BaseLink));
+									'baselink' => $BaseLink));*/
 					
 				}
 			}
