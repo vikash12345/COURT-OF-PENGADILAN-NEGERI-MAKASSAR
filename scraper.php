@@ -17,7 +17,15 @@ $RowNumb	=	-1;
 				if ($RowNumb != 0) 
 				{
 					$no			=	$element->find('td[1]', 0)->plaintext;
-					echo "$no\n";
+					$nomor			=	$element->find('td[1]', 0)->plaintext;
+					$tangal			=	$element->find('td[1]', 0)->plaintext;
+					$klasifikasi			=	$element->find('td[1]', 0)->plaintext;
+					$para			=	$element->find('td[1]', 0)->plaintext;
+					$status			=	$element->find('td[1]', 0)->plaintext;
+					$lama			=	$element->find('td[1]', 0)->plaintext;
+					$details			=	$element->find('td[1]\a', 0)->href;
+					echo "$details\n";
+					
 				}
 			}
 		}
