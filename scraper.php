@@ -25,7 +25,7 @@ $RowNumb	=	-1;
 					$lama			=	$element->find('td[7]', 0)->plaintext;
 					$details		=	$element->find('td[8]\a', 0)->href;
 					
-					echo "$nomor\n";
+					echo "$no\n";
 					/*scraperwiki::save_sqlite(array('no'), array('no' => $no,
 									'nomor' => $nomor,
 									'tangal' => $tangal,
