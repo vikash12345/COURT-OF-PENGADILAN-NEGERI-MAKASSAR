@@ -17,6 +17,15 @@ $RowNumb	=	-1;
 				if ($RowNumb != 0) 
 				{
 					$no			=	$element->find('td[1]', 0)->plaintext;
+					
+					
+					echo "$no\n";
+					
+					
+					
+					/*
+					
+					
 					$nomor			=	$element->find('td[2]', 0)->plaintext;
 					$tangal			=	$element->find('td[3]', 0)->plaintext;
 					$klasifikasi		=	$element->find('td[4]', 0)->plaintext;
@@ -25,8 +34,7 @@ $RowNumb	=	-1;
 					$lama			=	$element->find('td[7]', 0)->plaintext;
 					$details		=	$element->find('td[8]\a', 0)->href;
 					
-					echo "$no\n";
-					/*scraperwiki::save_sqlite(array('no'), array('no' => $no,
+					scraperwiki::save_sqlite(array('no'), array('no' => $no,
 									'nomor' => $nomor,
 									'tangal' => $tangal,
 									'klasifikasi' => $klasifikasi, 
