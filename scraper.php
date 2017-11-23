@@ -17,7 +17,7 @@ $RowNumb	=	-1;
 				if ($RowNumb != 0) 
 				{
 					$no			=	$element->find('td[1]', 0)->plaintext;
-					echo $no;
+					echo "$no\n";
 				}
 			}
 		}
