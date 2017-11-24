@@ -25,7 +25,7 @@ $RowNumb	=	-1;
 					/*$status		=	$element->find('td[6]', 0)->plaintext;
 					$lama			=	$element->find('td[7]', 0)->plaintext;
 					$details		=	$element->find('td[8]\a', 0)->href;*/
-					echo "trim($para)\n";
+					echo trim($para);
 					
 				}
 			}
