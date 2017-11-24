@@ -18,8 +18,13 @@ $RowNumb	=	-1;
 				{
 					$no			=	$element->find('td[1]', 0)->plaintext;
 					$nomor			=	$element->find('td[2]', 0)->plaintext;
-					
-					echo "$nomor\n";
+					$tangal			=	$element->find('td[3]', 0)->plaintext;
+					/*$klasifikasi		=	$element->find('td[4]', 0)->plaintext;
+					$para			=	$element->find('td[5]', 0)->plaintext;
+					$status			=	$element->find('td[6]', 0)->plaintext;
+					$lama			=	$element->find('td[7]', 0)->plaintext;
+					$details		=	$element->find('td[8]\a', 0)->href;*/
+					echo "$tangal\n";
 					
 					
 					
@@ -27,12 +32,7 @@ $RowNumb	=	-1;
 					
 					
 					
-					$tangal			=	$element->find('td[3]', 0)->plaintext;
-					$klasifikasi		=	$element->find('td[4]', 0)->plaintext;
-					$para			=	$element->find('td[5]', 0)->plaintext;
-					$status			=	$element->find('td[6]', 0)->plaintext;
-					$lama			=	$element->find('td[7]', 0)->plaintext;
-					$details		=	$element->find('td[8]\a', 0)->href;
+					
 					
 					scraperwiki::save_sqlite(array('no'), array('no' => $no,
 									'nomor' => $nomor,
