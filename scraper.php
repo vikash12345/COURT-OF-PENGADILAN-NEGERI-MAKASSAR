@@ -14,10 +14,11 @@ $RowNumb	=	-1;
 			foreach ($Html->find("//*[@id='tablePerkaraAll']/tbody/tr") as $element) 
 			{
 				$RowNumb	+=	1;
+				$no			=	$element->find('td[1]', 0)->plaintext;
+				$nomor			=	$element->find('td[2]', 0)->plaintext;
 				if ($RowNumb != 0) 
 				{
-					$no			=	$element->find('td[1]', 0)->plaintext;
-					$nomor			=	$element->find('td[2]', 0)->plaintext;
+					
 					$tangal			=	$element->find('td[3]', 0)->plaintext;
 					/*$klasifikasi		=	$element->find('td[4]', 0)->plaintext;
 					$para			=	$element->find('td[5]', 0)->plaintext;
