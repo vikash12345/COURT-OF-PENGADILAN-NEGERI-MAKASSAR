@@ -26,42 +26,17 @@ $RowNumb	=	-1;
 					$details		=	$element->find('td[8]\a', 0)->href;*/
 					
 					scraperwiki::save_sqlite(array('nomor'), array('nomor' => $nomor,
-									'no' =>$no));
-					
-					
-					/*
-					
-					
-					
-					
-					
-					scraperwiki::save_sqlite(array('no'), array('no' => $no,
-									'nomor' => $nomor,
-									'tangal' => $tangal,
-									'klasifikasi' => $klasifikasi, 
-									'para' => $para,
-									'status' => $status, 
-									'lama' => $lama, 
-									'details' => $details,
-									'baselink' => $BaseLink));*/
-					
+									'no' => $no));
 				}
 			}
 		}
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 ?>
 
+					
+					
+				
 
 
