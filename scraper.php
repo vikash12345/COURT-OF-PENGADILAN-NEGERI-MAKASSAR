@@ -2,7 +2,7 @@
 
 require 		'scraperwiki.php';
 require 		'scraperwiki/simple_html_dom.php';
-for($page = 1; $page < 2 ; $page++)
+for($page = 1; $page < 3732 ; $page++)
 	{
 $BaseLink	=	'http://sipp.pn-makassar.go.id/list_perkara/page/'.$page;
 $Html		=	file_get_html($BaseLink);
