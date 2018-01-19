@@ -26,8 +26,8 @@ $RowNumb	=	-1;
 					$lama			=	$element->find('td[7]', 0)->plaintext;
 					$details		=	$element->find('td[8]\a', 0)->href;
 					
-					 $record = array( 'num' => $no, 'nomor' => $nomor);
-           scraperwiki::save(array('num','nomor'), $record); 
+					 $record = array( 'num' => $no, 'nomor' => $nomor, 'tangal' => $tangal, 'klasifikasi' => $klasifikasi, 'para' => $para, 'status' => $status, 'lama' => $lama, 'details' => $details, 'pagelink' => $BaseLink);
+           scraperwiki::save(array('num','nomor','tangal','klasifikasi','para','status','lama','details','pagelink'), $record); 
 					
 					
 				}
