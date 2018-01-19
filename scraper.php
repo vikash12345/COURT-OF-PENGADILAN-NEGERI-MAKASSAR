@@ -25,7 +25,10 @@ $RowNumb	=	-1;
 					$status			=	$element->find('td[6]', 0)->plaintext;
 					$lama			=	$element->find('td[7]', 0)->plaintext;
 					$details		=	$element->find('td[8]\a', 0)->href;
-					echo "$details\n";
+					
+					 $record = array( 'num' => $no, 'nomor' => $nomor);
+           scraperwiki::save(array('num','nomor'), $record); 
+					
 					
 				}
 			}
